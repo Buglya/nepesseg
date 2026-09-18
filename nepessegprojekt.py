@@ -15,9 +15,6 @@ with open("lakossag_2025.csv", "r", encoding="UTF-8") as fajl:
         }
         nepesseg.append(adatok_szotar)
 
-print(nepesseg)
-
-
 
 def megye_adatai():
     megyekod = input("Adj meg egy megyekódot: ")
@@ -38,9 +35,9 @@ def megye_adatai():
     if telepulesek_szama == 0:
         print("Nincs adat ehhez a megyekódhoz.")
     else:
-        print(f"■ Települések száma a megyében: {telepulesek_szama}")
-        print(f"■ Hányan élnek összesen a megyében: {osszes_lakos} fő")
-        print(f"■ Hányan élnek a városokban: {varosi_lakos} fő")
+        print(f" Települések száma a megyében: {telepulesek_szama}")
+        print(f" Hányan élnek összesen a megyében: {osszes_lakos} fő")
+        print(f" Hányan élnek a városokban: {varosi_lakos} fő")
         
     print("-" * 50) 
 
@@ -97,6 +94,8 @@ def telepules_tipusok():
 
 def fomenu():
     while True:
+        print("Készítette: Hollik Milán & Muzsi Noé")
+        print("------------------------------------")
         print("Főmenüből kiválasztható funkciók: ")
         print("1: Megye adatai | 2: Település adatai | 3: Kilépés")
         x = int(input("Válassz egy funkciót: "))
