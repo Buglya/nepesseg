@@ -95,10 +95,11 @@ def telepules_tipusok():
 def fomenu():
     while True:
         print("Készítette: Hollik Milán & Muzsi Noé")
-        print("------------------------------------")
+        print("-------------------------------------")
         print("Főmenüből kiválasztható funkciók: ")
         print("1: Megye adatai | 2: Település adatai | 3: Kilépés")
         x = int(input("Válassz egy funkciót: "))
+        print("-------------------------------------")
         if x == 1:
             megye_adatai()
         elif x == 2:
